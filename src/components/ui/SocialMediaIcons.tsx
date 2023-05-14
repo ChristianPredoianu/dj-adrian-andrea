@@ -2,7 +2,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export default function SocialMediaIcons() {
   return (
-    <div className='w-1/6 flex justify-between'>
+    <div className='hidden justify-between gap-4 text-2xl text-red-800 lg:flex'>
       <FontAwesomeIcon icon={['fab', 'soundcloud']} />
       <FontAwesomeIcon icon={['fab', 'facebook']} />
       <FontAwesomeIcon icon={['fab', 'instagram']} />
