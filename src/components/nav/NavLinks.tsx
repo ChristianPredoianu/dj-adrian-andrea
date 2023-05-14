@@ -1,9 +1,17 @@
-export default function NavLinks() {
+interface NavLinkProps {
+  link: {
+    name: string;
+  };
+  onCloseNavbar: () => void;
+}
+
+export default function NavLinks({ link, onCloseNavbar }: NavLinkProps) {
   return (
-    <ul className='flex justify-between w-2/5'>
-      <li>Home</li>
-      <li>About</li>
-      <li>Tracks</li>
-    </ul>
+    <li
+      className='text-md transition-duration: 150ms flex items-center px-3 py-4 uppercase leading-snug tracking-widest text-white transition-colors hover:opacity-75  lg:text-black'
+      onClick={onCloseNavbar}
+    >
+      {link.name}
+    </li>
   );
 }
